@@ -5,14 +5,13 @@ def tourist_density(location_type, current_visitors, capacity):
 
     occupancy_rate = (current_visitors / capacity) * 100
 
-    match location_type:
-        case 1:
+    if location_type == 1:
             location_name = "Beach"
-        case 2:
+    elif location_type == 2:
             location_name = "Museum"
-        case 3:
+    elif location_type == 3:
             location_name = "Historic Site"
-        case _:
+    else:
             location_name = "Unknown"
 
     if occupancy_rate < 40:
