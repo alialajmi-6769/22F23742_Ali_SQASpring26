@@ -7,13 +7,17 @@ def tourist_density(location_type, current_visitors, capacity):
 
     match location_type:
         case 1:
-            location_name = "Beach"
+          location_name = "Beach"
         case 2:
-            location_name = "Museum"
+          location_name = "Museum"
         case 3:
-            location_name = "Historic Site"
+          location_name = "Historic Site"
+        case 4:
+          location_name = "Park"
+        case 5:
+          location_name = "Shopping Mall"
         case _:
-            location_name = "Unknown"
+          location_name = "Unknown"
 
     if occupancy_rate < 40:
         density_status = "Low"
